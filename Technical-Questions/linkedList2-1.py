@@ -97,6 +97,9 @@ class LinkedList:
                     runner.next
             current = current.next
         return self.head
+    
+    # Time: O(n^2)
+    # Space: O(1)
 
         
 
