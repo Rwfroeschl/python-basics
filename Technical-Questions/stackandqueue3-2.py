@@ -2,7 +2,6 @@ class Stack:
     def __init__(self):
         self.stack = []
         self.smallest = 0
-        self.track = {}
     def push(self, item):
         if not self.stack:
             self.smallest = item
@@ -10,9 +9,6 @@ class Stack:
             self.smallest = item
         self.stack.append(item)
     def pop(self):
-        print ("smallest and top of stack before pop", self.smallest, self.stack[-1])
-        if self.smallest == self.stack[-1]:
-            self.smallest = min(self.stack)
         if self.stack:
             self.stack.pop()
         else:
